@@ -1,5 +1,5 @@
 # Created by wiggins@concentricsky.com on 10/8/15.
-import basic_models
+#import basic_models
 
 from django.contrib.admin import AdminSite
 from django.utils.module_loading import autodiscover_modules
