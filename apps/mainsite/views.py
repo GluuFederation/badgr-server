@@ -74,5 +74,4 @@ def email_unsubscribe(request, *args, **kwargs):
     except IntegrityError:
         pass
 
-    return HttpResponse("You will no longer receive email notifications for \
-                        earned badges from this domain.")
+    return HttpResponse("You will no longer receive email notifications for \ earned badges from this domain.")

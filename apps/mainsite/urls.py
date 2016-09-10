@@ -7,6 +7,11 @@ from django.views.generic.base import RedirectView, TemplateView
 from rest_framework.authtoken.views import obtain_auth_token
 
 from .views import SitemapView, info_view, email_unsubscribe
+from django.contrib import admin
+
+
+    
+
 
 from mainsite.admin import badgr_admin
 badgr_admin.autodiscover()
@@ -25,6 +30,7 @@ urlpatterns = patterns('',
 
     # Home
     url(r'^$', info_view, name='index'),
+    url(r'^admin/', admin.site.urls),
 
     # Sitemaps
     url(r'^sitemap$', SitemapView.as_view(), name='sitemap'),
